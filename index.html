@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Body - main container  -->
+    <div
+      class="w-screen min-h-screen bg-gradient-to-b from-[#6011A5] to-[#855DE8] text-white pt-[2%] flex flex-col relative"
+    >
+      <!-- TopBar  -->
+      <div id="topBar" class="flex flex-col m-2">
+        <!-- Title  -->
+        <div class="mx-auto flex justify-center items-center m-4">
+          <img src="/images/notes.png" alt="" class="w-20" />
+          <span class="font-semibold text-white text-3xl">Notes</span>
+        </div>
+        <!-- Create Button  -->
+        <button
+          id="btn"
+          class="mx-auto flex bg-gradient-to-b from-[#9418fd] to-[#571094] w-48 justify-center h-14 items-center rounded-full cursor-pointer hover:from-[#571094] hover:to-[#9418fd] active:from-[#571094] active:to-[#9418fd]"
+        >
+          <img class="w-6" src="/images/edit.png" alt="" />
+          <span class="text-white ml-2 text-md">Create a note</span>
+        </button>
+      </div>
+      <!-- Main Content -->
+      <!-- Note Container  -->
+      <div
+        id="notesContainer"
+        class="m-4 flex w-[95%] mx-auto h-auto wrap flex-wrap justify-center items-center max-h-[55vh] overflow-auto"
+      >
+        <!-- <p
+          id="input"
+          class="input-box"
+          contenteditable="true"
+          data-placeholder="Start typing here..."
+        >
+          &#8203;
+          <img class="img" src="/images/delete.png" alt="" />
+        </p> -->
+      </div>
+      <div
+        class="text-slate-100 text-center h-14 w-72 mx-auto flex flex-col justify-center absolute bottom-0 left-1/2 transform -translate-x-1/2"
+      >
+        <a href="http://niloykm.me/profileLinks/" target="_blank">
+          Connect with &copy;Niloy
+        </a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
