@@ -25,7 +25,7 @@ createBtn.addEventListener("click", () => {
     img.className = "img";
     inputBox.setAttribute("contenteditable", "true");
     inputBox.setAttribute("data-placeholder", "Start typing here...");
-    img.src = "/images/delete.png";
+    img.src = "images/delete.png";
     notesContainer.appendChild(inputBox).appendChild(img);
     addEventListenersToNotes();
     updateStorage();
